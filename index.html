@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MLB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo">
+                <img src="./big/logo.png" alt="logo.png">
+            </a>
+            <ul>
+                <li><a href="#">APPAREL</a></li>
+                <li><a href="#">CAP</a></li>
+                <li><a href="#">SHOES</a></li>
+                <li><a href="#">BAG & ACC</a></li>
+                <li><a href="#">KIDS</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <div class="title">
+                    <h2>트렌드와 클래식의 공존,<br>글로벌 NO.1 PREMIUM LIFESTYLE FASHION BRAND</h2> 
+                </div>
+                <p>엠엘비(MLB)는 150년 전통의 아메리칸 스포츠 라이프스타일(American Sports Lifestyle)을 상징하는 Major League <br> Basseball의 헤리티지 기반 컬처를 재해석한 프리미엄 라이프스타일 패션 브랜드입니다.</p>
+                <p>1997년, 한국 패션 브랜드로 재탄생한 MLB는 USA SPORTS DNA에 동양의 메시지를 현대적으로 담아내어 
+                    <br>소비자 라이프스타일을 선도하고 트렌드를 리딩하고 있습니다.</p>
+                <p>정교하고 디테일한 디지털 마케팅의 실행으로 전세계 소비자들과 만나며 중국, 홍콩, 싱가폴 등 
+                    <br>아시아 국가 전역에서 패선을 선도하는 GLOBAL NO.1 MEGABRAND로 도약하고 있습니다.</p>
+                <a href="#">바로보기</a>   
+            </div>
+            <div class="imgsBox">
+                <img src="./big/img11.png" alt="img11" class="bigShoes">
+            </div>
+        </div>
+        <ul class="mini_shoes">
+            <li><img src="./mini/img1.png" alt="" onclick="imgSlider('./big/img11.png'); changeCircleColor('#fff4d4')"></li>
+            <li><img src="./mini/img2.png" alt="" onclick="imgSlider('./big/img22.png'); changeCircleColor('#ffd6d2')"></li>
+            <li><img src="./mini/img3.png" alt="" onclick="imgSlider('./big/img33.png'); changeCircleColor('#ffd3b8')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./sns/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./sns/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="./sns/twitter.png" alt=""></a></li>
+        </ul>
+        
+        
+    </section>
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.bigShoes').src=anything
+        }
+        function changeCircleColor (color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+        }
+    </script>
+</body>
+</html>
